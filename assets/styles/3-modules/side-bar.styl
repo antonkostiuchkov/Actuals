@@ -1,0 +1,68 @@
+.menu
+  fill text
+  position fixed
+  top 20px
+  right 20px
+  z-index 2
+  background-color transparent
+  cursor pointer
+  transition all 200ms ease-in-out
+
+
+  svg
+    position absolute
+    top 30%
+    right 0
+    width 30px
+    height @width
+    &:hover
+      fill lighten(text, 50%)
+
+.side-bar
+  position fixed
+  top 0px
+  right 0px
+  bottom 0px
+  z-index 0
+  width side-bar-width
+  padding 70px 30px 30px 30px
+  background-color base-dark
+
+  .side-bar-measure
+    margin-bottom 20px
+    position relative
+
+    a
+      background-color base-light
+      width 5px
+      height @width
+      line-height @width + 3
+      text-align center
+      padding 8px
+      border-radius 50%
+      position absolute
+      font-size 14px
+      top 0px
+      right 0
+
+      &:hover
+        background-color lighten(base-light, 10)
+
+    input
+      display block
+      width 176px
+
+
+#side-bar-toggle
+  display none
+
+  &:checked + .page-wrap
+
+    .menu
+      right side-bar-width + 80px
+
+    .page-content
+      margin-right side-bar-width + 60px
+
+
+

@@ -1,0 +1,52 @@
+doctype html
+html(lang="en")
+	head
+		//- Basic Page Needs
+		meta(charset="utf-8")
+		title Website
+		meta(name="description", content="")
+		meta(name="author" content="")
+
+		//- Mobile Specific Metas
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+
+		//- Font
+		link(rel="stylesheet", href="//fonts.googleapis.com/css?family=Raleway:400,300,600" type="text/css")
+
+		//- CSS
+		link(rel='stylesheet', href='main.css')
+
+		//- Favicon
+		link(rel="icon", type="image/png", href="./img/favicon.png")
+
+	body
+
+		input(type="checkbox" id="side-bar-toggle")
+
+		.page-wrap
+
+			label(for="side-bar-toggle").menu
+				include menu.html
+
+			.page-content
+				include nav-bar.jade
+
+				h2 Income Statement
+
+				section(id="incomeStatement")
+
+				h2 Balance Sheet
+				section(id="balanceSheet")
+
+				h2 Cash Flow
+				section(id="cashFlow")
+
+				include overlay.jade
+
+			include side-bar.jade
+
+
+		script(src="jquery-2.1.4.min.js")
+		script(src="app.js")
+

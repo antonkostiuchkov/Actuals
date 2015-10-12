@@ -14,4 +14,4 @@ As simple as it is, the main feature of this application is its functionality,
 while design remains strict and unostentatious.
 
 
-
+![The Design](/Design-01.jpg)

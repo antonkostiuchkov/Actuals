@@ -13,5 +13,6 @@ Location of each element was defined taking into account structure of financial 
 As simple as it is, the main feature of this application is its functionality,
 while design remains strict and unostentatious.
 
+## The Design
 
 ![The Design](/Design-01.jpg)
